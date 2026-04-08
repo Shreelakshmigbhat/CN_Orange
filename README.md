@@ -1,9 +1,9 @@
 # **CN ORANGE PROBLEM**
 ## Problem 17) *PACKET DROPPING SIMULATION* 
 
-#### *Name: Shreelakshmi G Bhat\*
-#### *SRN: PES2UG24CS478\*
-#### *Sec: H*
+#### **Name: Shreelakshmi G Bhat\**
+#### **SRN: PES2UG24CS478\**
+#### **Sec: H**
 
 1.
     i) Problem Statement
