@@ -1,10 +1,9 @@
-# **CN ORANGE PROBLEM**
-## Problem 17) *PACKET DROPPING SIMULATION* 
+# CN ORANGE PROBLEM
+## Problem 17: Packet Dropping Simulation
 
-#### **Name: Shreelakshmi G Bhat\**
-#### **SRN: PES2UG24CS478\**
-#### **Sec: H**
-
+### Name: Shreelakshmi G Bhat  
+### SRN: PES2UG24CS478  
+### Section: H
 1.
     i) Problem Statement
 
