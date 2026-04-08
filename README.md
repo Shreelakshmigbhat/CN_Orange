@@ -19,12 +19,19 @@
     iii) setup:
   <img width="1674" height="947" alt="image" src="https://github.com/user-attachments/assets/ef002e1b-b3ad-41e7-afb7-42c826c5946e" />
   
-    iv)Topology initialization:
+   iv)Topology initialization:
 <img width="1133" height="641" alt="image" src="https://github.com/user-attachments/assets/43f7f31f-cb0d-4308-810f-963b02ae65ff" />
+
+
     v) Controller setup:
   <img width="1355" height="1113" alt="image" src="https://github.com/user-attachments/assets/678ee89d-526f-4be0-845a-cdd043965bcb" />
 
 Justification:
+The chosen topology is simple and effective:
+
+Easy to understand and debug
+Clearly shows traffic flow
+Suitable for demonstrating selective packet dropping
 
 2. i) packet in handling:
    <img width="757" height="490" alt="image" src="https://github.com/user-attachments/assets/310e3bd2-20ce-4c72-8035-3c6ceb28aa05" />
