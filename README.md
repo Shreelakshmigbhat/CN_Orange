@@ -1,110 +1,109 @@
-# CN ORANGE PROBLEM
-## Problem 17: Packet Dropping Simulation
+# Problem 17 — Packet Dropping Simulation
 
-### Name: Shreelakshmi G Bhat  
-### SRN: PES2UG24CS478  
-### Section: H
-1.
-    i) Problem Statement
+**Name:** Shreelakshmi G Bhat &nbsp;|&nbsp; **SRN:** PES2UG24CS478 &nbsp;|&nbsp; **Section:** H
 
-   The objective of this project is to design and implement a Software Defined Networking (SDN) based solution using         Mininet and an OpenFlow controller to simulate packet loss behavior in a network. The system should demonstrate         how flow rules can be used to selectively drop packets and control traffic dynamically.
+---
 
-    ii) Objective 
-     ->To add drop rules in the network using SDN\
-     ->To choose and control specific data flows between hosts\
-     ->To check how much packet loss happens after applying rules\
-     ->To observe how the network behaves when packets are dropped\
-     ->To test again (regression testing) and make sure the rules still work properly\
-  
-    iii) setup:
-  <img width="1674" height="947" alt="image" src="https://github.com/user-attachments/assets/ef002e1b-b3ad-41e7-afb7-42c826c5946e" />
-  
-   iv)Topology initialization:
-<img width="1133" height="641" alt="image" src="https://github.com/user-attachments/assets/43f7f31f-cb0d-4308-810f-963b02ae65ff" />
+## 1. Problem Overview
 
+### Problem Statement
 
-    v) Controller setup:
-  <img width="1355" height="1113" alt="image" src="https://github.com/user-attachments/assets/678ee89d-526f-4be0-845a-cdd043965bcb" />
+Design and implement an SDN-based solution using Mininet and an OpenFlow controller to simulate packet loss behavior in a network. The system demonstrates how flow rules can be used to selectively drop packets and control traffic dynamically.
 
-Justification:
-The chosen topology is simple and effective:
+### Objectives
 
-Easy to understand and debug
-Clearly shows traffic flow
-Suitable for demonstrating selective packet dropping
+- Add drop rules in the network using SDN
+- Choose and control specific data flows between hosts
+- Measure how much packet loss occurs after applying rules
+- Observe network behavior when packets are dropped
+- Perform regression testing to verify rules remain effective
 
-2. i) packet in handling:
-   <img width="757" height="490" alt="image" src="https://github.com/user-attachments/assets/310e3bd2-20ce-4c72-8035-3c6ceb28aa05" />
-   
-   ii) match action rule design:
-   drop_controller.py file ->
-<img width="1735" height="1464" alt="image" src="https://github.com/user-attachments/assets/a245c0d9-bdb7-4139-b421-755d0e20e3a3" />
+### Setup
 
-   iii) flow-rule installation:
-   <img width="1382" height="444" alt="image" src="https://github.com/user-attachments/assets/b0f9b9dc-0e56-42ac-b70d-324fd6faa986" />
+![Setup](https://github.com/user-attachments/assets/ef002e1b-b3ad-41e7-afb7-42c826c5946e)
 
-   iv) Priority & Matching:
-   <img width="1382" height="444" alt="image" src="https://github.com/user-attachments/assets/b0f9b9dc-0e56-42ac-b70d-324fd6faa986" />
+### Topology Initialization
 
-3.Functional Corrcectness:
+![Topology initialization](https://github.com/user-attachments/assets/43f7f31f-cb0d-4308-810f-963b02ae65ff)
 
-   i) Baseline connectivity:
-   <img width="1133" height="641" alt="image" src="https://github.com/user-attachments/assets/4554a9c8-cfbd-4fcc-84ad-5424a7ac2ee2" />
+### Controller Setup
 
-   ii) Packet drop with errors:
-   <img width="1262" height="524" alt="image" src="https://github.com/user-attachments/assets/a72577a4-ee40-49d0-9872-b9be8a0292d6" />
+![Controller setup](https://github.com/user-attachments/assets/678ee89d-526f-4be0-845a-cdd043965bcb)
 
-   iii) Selective Filtering:
-   <img width="810" height="707" alt="image" src="https://github.com/user-attachments/assets/bb37e102-f4ec-46f1-8b48-ea81d223cbbf" />
+> **Topology justification:** The chosen topology is simple and effective — easy to understand and debug, clearly shows traffic flow, and is well-suited to demonstrating selective packet dropping.
 
-4. Performance Observation & Analysis:
+---
 
-    i) Packet loss:
-     <img width="1262" height="524" alt="image" src="https://github.com/user-attachments/assets/a72577a4-ee40-49d0-9872-b9be8a0292d6" />
+## 2. Design & Implementation
 
-    ii)Latency:
-   <img width="810" height="707" alt="image" src="https://github.com/user-attachments/assets/5d6cb14b-b205-4acb-869b-ad9075e6b899" />
+### Packet-In Handling
 
-    iii)Throughput:
-   <img width="559" height="200" alt="image" src="https://github.com/user-attachments/assets/11edab52-8437-4883-b40b-2c18e9bdd6dc" />
+![Packet-in handler](https://github.com/user-attachments/assets/310e3bd2-20ce-4c72-8035-3c6ceb28aa05)
 
-    iv) Flow Table:
-   <img width="1382" height="444" alt="image" src="https://github.com/user-attachments/assets/7738fed6-281d-4d15-a8cf-885354771226" />
+### Match-Action Rule Design (`drop_controller.py`)
 
+![drop_controller.py](https://github.com/user-attachments/assets/a245c0d9-bdb7-4139-b421-755d0e20e3a3)
 
-5.
- i) Validation :
+### Flow-Rule Installation
 
-   Before adding controller :
-   <img width="1133" height="641" alt="image" src="https://github.com/user-attachments/assets/dc7dc4c2-d06a-4288-b1e3-ea975d6a25b9" />
+![Flow rule installation](https://github.com/user-attachments/assets/b0f9b9dc-0e56-42ac-b70d-324fd6faa986)
 
-   After adding controller :
-  <img width="1262" height="524" alt="image" src="https://github.com/user-attachments/assets/4c539a42-aa32-403e-b7df-5344277f7ed6" />
+### Priority & Matching
 
+![Priority and matching](https://github.com/user-attachments/assets/b0f9b9dc-0e56-42ac-b70d-324fd6faa986)
 
-ii) regression testing 
-<img width="1512" height="1116" alt="image" src="https://github.com/user-attachments/assets/642c5f4f-1a03-42f0-97bd-bbcd62278181" />
-<img width="1400" height="807" alt="image" src="https://github.com/user-attachments/assets/5822bf7b-5cca-4f80-a134-8304dba73315" />
+---
 
+## 3. Functional Correctness
 
+### Baseline Connectivity
 
+![Baseline connectivity](https://github.com/user-attachments/assets/4554a9c8-cfbd-4fcc-84ad-5424a7ac2ee2)
 
+### Packet Drop with Errors
 
+![Packet drop output](https://github.com/user-attachments/assets/a72577a4-ee40-49d0-9872-b9be8a0292d6)
 
-   
-   
+### Selective Filtering
 
+![Selective filtering](https://github.com/user-attachments/assets/bb37e102-f4ec-46f1-8b48-ea81d223cbbf)
 
-   
+---
 
+## 4. Performance Observation & Analysis
 
+### Packet Loss
 
+![Packet loss](https://github.com/user-attachments/assets/a72577a4-ee40-49d0-9872-b9be8a0292d6)
 
+### Latency
 
+![Latency](https://github.com/user-attachments/assets/5d6cb14b-b205-4acb-869b-ad9075e6b899)
 
+### Throughput
 
+![Throughput](https://github.com/user-attachments/assets/11edab52-8437-4883-b40b-2c18e9bdd6dc)
 
+### Flow Table
 
+![Flow table](https://github.com/user-attachments/assets/7738fed6-281d-4d15-a8cf-885354771226)
 
+---
 
+## 5. Validation & Testing
 
+### Validation
+
+**Before adding the controller:**
+
+![Before controller](https://github.com/user-attachments/assets/dc7dc4c2-d06a-4288-b1e3-ea975d6a25b9)
+
+**After adding the controller:**
+
+![After controller](https://github.com/user-attachments/assets/4c539a42-aa32-403e-b7df-5344277f7ed6)
+
+### Regression Testing
+
+![Regression test 1](https://github.com/user-attachments/assets/642c5f4f-1a03-42f0-97bd-bbcd62278181)
+
+![Regression test 2](https://github.com/user-attachments/assets/5822bf7b-5cca-4f80-a134-8304dba73315)
