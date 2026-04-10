@@ -118,9 +118,10 @@ To verify selectivity, pings from h1→h3 and h2→h3 are tested while the h1→
 <img width="1911" height="1369" alt="image" src="https://github.com/user-attachments/assets/9130e43d-2037-48f1-b6e8-5abdb556b47d" />
 <img width="2007" height="1439" alt="image" src="https://github.com/user-attachments/assets/3505e91d-7d3a-46b2-97ca-cb78f8ad92bb" />
 
+
 Explanation of Wireshark screenshots: 
 The screenshots demonstrate both blocked and allowed traffic scenarios in the SDN-enabled network. In the first case, traffic from h1 (10.0.0.1) to h2 (10.0.0.2) results in 100% packet loss, as observed from the Mininet ping output. Correspondingly, the Wireshark capture shows ICMP Echo Requests being sent but no Echo Replies, confirming that packets are being dropped due to the installed flow rule. In contrast, communication between h2 (10.0.0.2) and h3 (10.0.0.3) is successful, with 0% packet loss and visible ICMP request–reply exchanges in Wireshark. This validates that the controller enforces selective packet dropping, affecting only the specified flow while allowing all other traffic to pass normally.
----
+
 
 ## 4. Performance Observation & Analysis
 
