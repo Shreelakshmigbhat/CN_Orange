@@ -24,7 +24,6 @@ Design and implement an SDN-based solution using Mininet and an OpenFlow control
 
 ![Setup](https://github.com/user-attachments/assets/ef002e1b-b3ad-41e7-afb7-42c826c5946e)
 
-The environment is set up using Mininet, a network emulator that creates virtual hosts, switches, and links on a single machine. The Ryu SDN framework is used as the OpenFlow controller. Both are installed and run on a Linux-based system (Ubuntu), allowing full control over the simulated network topology.
 
 ---
 
